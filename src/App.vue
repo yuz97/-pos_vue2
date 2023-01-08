@@ -1,15 +1,17 @@
 <template>
    <div class="app">
-      <div class="nav">
-         <router-link to="/">Home</router-link>
-         <router-link to="/about">About</router-link>
+      <Navbar />
+      <div class="container mt-4">
+         <router-view></router-view>
       </div>
-      <router-view></router-view>
    </div>
 </template>
 
 <script>
-export default {};
+import Navbar from "./components/Navbar.vue";
+export default {
+   components: { Navbar },
+};
 </script>
 
 <style></style>
