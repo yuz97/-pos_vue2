@@ -1,85 +1,160 @@
 {
-   "product": [
-      {
-         "id": 1,
-         "name": "Milk Coffee",
-         "price": 12000,
-         "is_ready": true,
-         "gambar": "kopi.jpeg"
-      },
-      {
-         "id": 2,
-         "name": "Orange Juice",
-         "price": 10000,
-         "is_ready": true,
-         "gambar": "jus_jeruk.jpeg"
-      },
-      {
-         "id": 8,
-         "name": "Bakso Setan",
-         "price": 25000,
-         "is_ready": true,
-         "gambar": "bakso.jpeg"
-      }
-   ],
-   "best-product": [
-      {
-         "id": 1,
-         "name": "Milk Coffee",
-         "price": 12000,
-         "is_ready": true,
-         "gambar": "kopi.jpeg"
-      },
-      {
-         "id": 2,
-         "name": "Orange Juice",
-         "price": 10000,
-         "is_ready": true,
-         "gambar": "jus_jeruk.jpeg"
-      },
-      {
-         "id": 3,
-         "name": "Dragon Fruite Juice",
-         "price": 15000,
-         "is_ready": true,
-         "gambar": "jus_naga.jpeg"
-      },
-      {
-         "id": 4,
-         "name": "Tahu Crispy",
-         "price": 10000,
-         "is_ready": true,
-         "gambar": "tahu.jpeg"
-      },
-      {
-         "id": 5,
-         "name": "Tahu Gejrot",
-         "price": 13000,
-         "is_ready": false,
-         "gambar": "gejrot.jpeg"
-      },
-      {
-         "id": 6,
-         "name": "Tahu Bulat",
-         "price": 10000,
-         "is_ready": true,
-         "gambar": "tahu_bulat.jpeg"
-      },
-      {
-         "id": 7,
-         "name": "Tahu Isi",
-         "price": 10000,
-         "is_ready": true,
-         "gambar": "tahu_isi.jpeg"
-      },
-      {
-         "id": 8,
-         "name": "Bakso Setan",
-         "price": 25000,
-         "is_ready": true,
-         "gambar": "bakso.jpeg"
-      }
-   ],
-   "cart": [],
-   "order": []
+  "best-product": [
+    {
+      "id": 1,
+      "name": "Milk Coffee",
+      "price": 12000,
+      "is_ready": true,
+      "gambar": "kopi.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Orange Juice",
+      "price": 10000,
+      "is_ready": true,
+      "gambar": "jus_jeruk.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "Tahu Crispy",
+      "price": 10000,
+      "is_ready": true,
+      "gambar": "tahu.jpeg"
+    },
+    {
+      "id": 8,
+      "name": "Bakso Setan",
+      "price": 25000,
+      "is_ready": true,
+      "gambar": "bakso.jpeg"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Milk Coffee",
+      "price": 12000,
+      "is_ready": true,
+      "gambar": "kopi.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Orange Juice",
+      "price": 10000,
+      "is_ready": true,
+      "gambar": "jus_jeruk.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Dragon Fruite Juice",
+      "price": 15000,
+      "is_ready": true,
+      "gambar": "jus_naga.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "Tahu Crispy",
+      "price": 10000,
+      "is_ready": true,
+      "gambar": "tahu.jpeg"
+    },
+    {
+      "id": 5,
+      "name": "Tahu Gejrot",
+      "price": 13000,
+      "is_ready": false,
+      "gambar": "gejrot.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "Tahu Bulat",
+      "price": 10000,
+      "is_ready": true,
+      "gambar": "tahu_bulat.jpeg"
+    },
+    {
+      "id": 7,
+      "name": "Tahu Isi",
+      "price": 10000,
+      "is_ready": true,
+      "gambar": "tahu_isi.jpeg"
+    },
+    {
+      "id": 8,
+      "name": "Bakso Setan",
+      "price": 25000,
+      "is_ready": true,
+      "gambar": "bakso.jpeg"
+    }
+  ],
+  "cart": [],
+  "order": [
+    {
+      "nama": "yus",
+      "no_meja": "1",
+      "cart": [
+        {
+          "jumlah_pesanan": "4",
+          "products": {
+            "id": 1,
+            "name": "Milk Coffee",
+            "price": 12000,
+            "is_ready": true,
+            "gambar": "kopi.jpeg"
+          },
+          "id": 2
+        }
+      ],
+      "id": 1
+    },
+    {
+      "nama": "rudi",
+      "no_meja": "2",
+      "cart": [
+        {
+          "jumlah_pesanan": "2",
+          "keterangan": "pedas",
+          "products": {
+            "id": 4,
+            "name": "Tahu Crispy",
+            "price": 10000,
+            "is_ready": true,
+            "gambar": "tahu.jpeg"
+          },
+          "id": 1
+        },
+        {
+          "jumlah_pesanan": "3",
+          "products": {
+            "id": 2,
+            "name": "Orange Juice",
+            "price": 10000,
+            "is_ready": true,
+            "gambar": "jus_jeruk.jpeg"
+          },
+          "id": 2
+        }
+      ],
+      "id": 2
+    },
+    {
+      "nama": "yusri",
+      "no_meja": "3",
+      "cart": [
+        {
+          "jumlah_pesanan": "1",
+          "keterangan": "manis",
+          "products": {
+            "id": 2,
+            "name": "Orange Juice",
+            "price": 10000,
+            "is_ready": true,
+            "gambar": "jus_jeruk.jpeg"
+          },
+          "id": 1
+        }
+      ],
+      "id": 3
+    }
+  ]
 }

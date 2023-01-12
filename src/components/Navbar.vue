@@ -20,18 +20,26 @@
                      >Home
                   </router-link>
                </li>
+
                <li class="nav-item">
-                  <router-link class="nav-link" to="/about">About</router-link>
-               </li>
-               <li class="nav-item">
-                  <router-link class="nav-link" to="/food">Food</router-link>
+                  <router-link class="nav-link" :to="{ name: 'Food' }"
+                     >Food</router-link
+                  >
                </li>
             </ul>
             <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
                <li class="nav-item">
-                  <router-link class="nav-link" aria-current="page" to="/" exact
+                  <router-link
+                     class="nav-link"
+                     aria-current="page"
+                     :to="{ name: 'Keranjang' }"
+                     exact
                      >Cart
-                     <span>0</span>
+                     <span>{{
+                        updateKeranjang
+                           ? updateKeranjang.length
+                           : jumlah_pesanan.length
+                     }}</span>
                   </router-link>
                </li>
             </ul>
@@ -41,8 +49,28 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
    name: "NavbarComponent",
+   props: ["updateKeranjang"],
+   data() {
+      return {
+         // keranjang: [],
+         jumlah_pesanan: [],
+      };
+   },
+   methods: {
+      getKeranjang() {
+         axios
+            .get(`http://localhost:3000/cart`)
+            .then((res) => (this.jumlah_pesanan = res.data))
+            .catch((e) => console.log(e));
+      },
+   },
+   mounted() {
+      this.getKeranjang();
+   },
 };
 </script>
 

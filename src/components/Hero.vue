@@ -1,12 +1,15 @@
 <template>
    <div class="row">
-      <div class="col d-flex justify-content-center align-items-center">
-         <h2><strong>Please wait a minute</strong> Your food is in process</h2>
+      <div class="col-md-12 text-center mt-4">
+         <h2><strong>Please wait a minute</strong></h2>
+         Your<b> food</b> is in process
+      </div>
+      <div class="col-md-12 text-center">
          <img
-            src="../assets/images/gummy-gameboy.svg"
+            src="../assets/images/finish.png"
             alt="gameboy"
-            width="400"
-            height="400" />
+            width="300"
+            height="300" />
       </div>
    </div>
 </template>
